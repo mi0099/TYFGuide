@@ -63,6 +63,10 @@
     scrollView.showsHorizontalScrollIndicator = NO;
     scrollView.pagingEnabled = YES;
     scrollView.bounces = NO;
+    
+    
+    
+    
 }
 
 //将内容添加到最后一个图片上
