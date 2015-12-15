@@ -10,17 +10,13 @@
 	<string>TYFGuide</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>57CB1A6AA8607B376CC4270FF136CD2AE2247A29</key>
-		<string>https://github.com/BullFei/QFLifeGuide</string>
 		<key>CCF1A798CB357579920F39DE28FD7DC6818537AE</key>
 		<string>https://github.com/BullFei/TYFGuide.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>TYFGuide/TYFGuide.xcodeproj</string>
+	<string>TYFGuideX/TYFGuide.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>57CB1A6AA8607B376CC4270FF136CD2AE2247A29</key>
-		<string>../../../../QFLifeGuide</string>
 		<key>CCF1A798CB357579920F39DE28FD7DC6818537AE</key>
 		<string>../../..</string>
 	</dict>
@@ -32,14 +28,6 @@
 	<string>CCF1A798CB357579920F39DE28FD7DC6818537AE</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
-		<dict>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.git</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>57CB1A6AA8607B376CC4270FF136CD2AE2247A29</string>
-			<key>IDESourceControlWCCName</key>
-			<string>QFLifeGuide</string>
-		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
