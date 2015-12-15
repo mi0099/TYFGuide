@@ -44,6 +44,25 @@
     self.header = header;
 }
 
+-(void)dealloc
+{
+    //释放内存
+    [self.header free];
+}
+
+//刷新控件进入开始刷新状态的时候调用
+-(void)refreshViewBeginRefreshing:(MJRefreshBaseView *)refreshView
+{
+    if ([refreshView isKindOfClass:[MJRefreshFooterView class]]) {//上拉刷新
+        
+    }else{//下拉刷新
+        [_dataArray removeAllObjects];
+        [self loadData];
+        //让刷新控件停止显示刷新状态
+        [self.header endRefreshing];
+    }
+}
+
 #pragma mark - 创建数据源
 -(void)loadData
 {
@@ -73,6 +92,34 @@
     _tableView.backgroundColor = [UIColor clearColor];
     [self.view addSubview:_tableView];
 }
+
+#pragma mark - tableView协议方法
+//每一组行数
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return _dataArray.count;
+}
+//复用cell
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    TYFClassityCell *cell = [TYFClassityCell cellWithTableView:tableView];
+    cell.classityModel = _dataArray[indexPath.row];
+    return cell;
+}
+//设置行高
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 54;
+}
+-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return 1;
+}
+-(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
+{
+    return 0.01;
+}
+
 
 
 - (void)didReceiveMemoryWarning {
