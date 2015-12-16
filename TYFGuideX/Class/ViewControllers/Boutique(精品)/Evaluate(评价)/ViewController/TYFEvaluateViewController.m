@@ -31,7 +31,35 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = TYFColor(244, 244, 244);
     [self createTableView];
-//    [self setupRefreshView];
+    [self setupRefreshView];
+}
+#pragma mark - 数据源
+-(void)setupRefreshView
+{
+    //1.下拉刷新
+    MJRefreshHeaderView *header = [MJRefreshHeaderView header];
+    header.scrollView = _tableView;
+    header.delegate = self;
+    //自动进入刷新状态
+    [header beginRefreshing];
+    self.header = header;
+}
+
+-(void)dealloc
+{
+    //释放内存
+    [self.header free];
+}
+
+/**
+ *  刷新控件进入开始刷新状态的时候调用
+ */
+-(void)refreshViewBeginRefreshing:(MJRefreshBaseView *)refreshView
+{
+    //下拉刷新
+    [_dataArray removeAllObjects];
+    [self loadData];
+    [self.header endRefreshing];
 }
 
 #pragma mark - createTableView

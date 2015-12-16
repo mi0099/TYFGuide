@@ -33,6 +33,13 @@
 		542A8E681C210F86002BE378 /* TYFEvaluateFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 542A8E671C210F86002BE378 /* TYFEvaluateFrame.m */; };
 		542A8E6B1C21528A002BE378 /* TYFPushDeatailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 542A8E6A1C21528A002BE378 /* TYFPushDeatailsViewController.m */; };
 		542A8E6E1C216351002BE378 /* TYFPushSingleObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 542A8E6D1C216351002BE378 /* TYFPushSingleObject.m */; };
+		542A8E761C218DD9002BE378 /* TYFCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 542A8E701C218DD9002BE378 /* TYFCollectionCell.m */; };
+		542A8E771C218DD9002BE378 /* TYFCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 542A8E711C218DD9002BE378 /* TYFCollectionCell.xib */; };
+		542A8E781C218DD9002BE378 /* TYFDetailsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 542A8E731C218DD9002BE378 /* TYFDetailsCell.m */; };
+		542A8E791C218DD9002BE378 /* TYFDetailsContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 542A8E751C218DD9002BE378 /* TYFDetailsContentView.m */; };
+		542A8E801C218E02002BE378 /* TYFCollectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 542A8E7B1C218E02002BE378 /* TYFCollectionModel.m */; };
+		542A8E811C218E02002BE378 /* TYFDetailsFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 542A8E7D1C218E02002BE378 /* TYFDetailsFrame.m */; };
+		542A8E821C218E02002BE378 /* TYFDetailsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 542A8E7F1C218E02002BE378 /* TYFDetailsModel.m */; };
 		544F39C51C1EA45000744927 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 544F39C41C1EA45000744927 /* main.m */; };
 		544F39C81C1EA45000744927 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 544F39C71C1EA45000744927 /* AppDelegate.m */; };
 		544F39CE1C1EA45000744927 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 544F39CC1C1EA45000744927 /* Main.storyboard */; };
@@ -770,6 +777,19 @@
 		542A8E6A1C21528A002BE378 /* TYFPushDeatailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYFPushDeatailsViewController.m; sourceTree = "<group>"; };
 		542A8E6C1C216351002BE378 /* TYFPushSingleObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYFPushSingleObject.h; sourceTree = "<group>"; };
 		542A8E6D1C216351002BE378 /* TYFPushSingleObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYFPushSingleObject.m; sourceTree = "<group>"; };
+		542A8E6F1C218DD9002BE378 /* TYFCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYFCollectionCell.h; sourceTree = "<group>"; };
+		542A8E701C218DD9002BE378 /* TYFCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYFCollectionCell.m; sourceTree = "<group>"; };
+		542A8E711C218DD9002BE378 /* TYFCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TYFCollectionCell.xib; sourceTree = "<group>"; };
+		542A8E721C218DD9002BE378 /* TYFDetailsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYFDetailsCell.h; sourceTree = "<group>"; };
+		542A8E731C218DD9002BE378 /* TYFDetailsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYFDetailsCell.m; sourceTree = "<group>"; };
+		542A8E741C218DD9002BE378 /* TYFDetailsContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYFDetailsContentView.h; sourceTree = "<group>"; };
+		542A8E751C218DD9002BE378 /* TYFDetailsContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYFDetailsContentView.m; sourceTree = "<group>"; };
+		542A8E7A1C218E02002BE378 /* TYFCollectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYFCollectionModel.h; sourceTree = "<group>"; };
+		542A8E7B1C218E02002BE378 /* TYFCollectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYFCollectionModel.m; sourceTree = "<group>"; };
+		542A8E7C1C218E02002BE378 /* TYFDetailsFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYFDetailsFrame.h; sourceTree = "<group>"; };
+		542A8E7D1C218E02002BE378 /* TYFDetailsFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYFDetailsFrame.m; sourceTree = "<group>"; };
+		542A8E7E1C218E02002BE378 /* TYFDetailsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYFDetailsModel.h; sourceTree = "<group>"; };
+		542A8E7F1C218E02002BE378 /* TYFDetailsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYFDetailsModel.m; sourceTree = "<group>"; };
 		544F39BF1C1EA45000744927 /* TYFGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TYFGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		544F39C31C1EA45000744927 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		544F39C41C1EA45000744927 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -1601,6 +1621,12 @@
 		542A8E311C20E4DA002BE378 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				542A8E7A1C218E02002BE378 /* TYFCollectionModel.h */,
+				542A8E7B1C218E02002BE378 /* TYFCollectionModel.m */,
+				542A8E7C1C218E02002BE378 /* TYFDetailsFrame.h */,
+				542A8E7D1C218E02002BE378 /* TYFDetailsFrame.m */,
+				542A8E7E1C218E02002BE378 /* TYFDetailsModel.h */,
+				542A8E7F1C218E02002BE378 /* TYFDetailsModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1608,6 +1634,13 @@
 		542A8E321C20E4DA002BE378 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				542A8E6F1C218DD9002BE378 /* TYFCollectionCell.h */,
+				542A8E701C218DD9002BE378 /* TYFCollectionCell.m */,
+				542A8E711C218DD9002BE378 /* TYFCollectionCell.xib */,
+				542A8E721C218DD9002BE378 /* TYFDetailsCell.h */,
+				542A8E731C218DD9002BE378 /* TYFDetailsCell.m */,
+				542A8E741C218DD9002BE378 /* TYFDetailsContentView.h */,
+				542A8E751C218DD9002BE378 /* TYFDetailsContentView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1663,16 +1696,6 @@
 		544F39B61C1EA45000744927 = {
 			isa = PBXGroup;
 			children = (
-				542A8E551C20E687002BE378 /* SystemConfiguration.framework */,
-				542A8E531C20E67D002BE378 /* MobileCoreServices.framework */,
-				542A8E511C20E670002BE378 /* AudioToolbox.framework */,
-				542A8E4F1C20E665002BE378 /* QuartzCore.framework */,
-				542A8E4D1C20E65B002BE378 /* Security.framework */,
-				542A8E4B1C20E653002BE378 /* CoreText.framework */,
-				542A8E491C20E64B002BE378 /* libiconv.dylib */,
-				542A8E471C20E627002BE378 /* libstdc++.dylib */,
-				542A8E451C20E614002BE378 /* libbz2.dylib */,
-				542A8E431C20E609002BE378 /* MediaPlayer.framework */,
 				544F39E81C1EA7CD00744927 /* Class */,
 				544F39C11C1EA45000744927 /* TYFGuide */,
 				544F39DB1C1EA45000744927 /* TYFGuideTests */,
@@ -1714,6 +1737,16 @@
 		544F39DB1C1EA45000744927 /* TYFGuideTests */ = {
 			isa = PBXGroup;
 			children = (
+				542A8E551C20E687002BE378 /* SystemConfiguration.framework */,
+				542A8E531C20E67D002BE378 /* MobileCoreServices.framework */,
+				542A8E511C20E670002BE378 /* AudioToolbox.framework */,
+				542A8E4F1C20E665002BE378 /* QuartzCore.framework */,
+				542A8E4D1C20E65B002BE378 /* Security.framework */,
+				542A8E4B1C20E653002BE378 /* CoreText.framework */,
+				542A8E491C20E64B002BE378 /* libiconv.dylib */,
+				542A8E471C20E627002BE378 /* libstdc++.dylib */,
+				542A8E451C20E614002BE378 /* libbz2.dylib */,
+				542A8E431C20E609002BE378 /* MediaPlayer.framework */,
 				544F39DE1C1EA45000744927 /* TYFGuideTests.m */,
 				544F39DC1C1EA45000744927 /* Supporting Files */,
 			);
@@ -2932,6 +2965,7 @@
 				544F3EDC1C1F987C00744927 /* player_seekbar_thumb_pressed.png in Resources */,
 				544F3EB71C1F987C00744927 /* new_feature_share_false.png in Resources */,
 				544F3F6D1C1F987C00744927 /* u1f3e1.png in Resources */,
+				542A8E771C218DD9002BE378 /* TYFCollectionCell.xib in Resources */,
 				544F3E3B1C1F987C00744927 /* ic_action_back.png in Resources */,
 				544F3E021C1F987C00744927 /* dots.png in Resources */,
 				544F3E5C1C1F987C00744927 /* loading_1.png in Resources */,
@@ -3562,6 +3596,7 @@
 				542A8E6E1C216351002BE378 /* TYFPushSingleObject.m in Sources */,
 				542A8E621C210F4D002BE378 /* TYFEvaluateCell.m in Sources */,
 				542A8E2A1C204A2F002BE378 /* TYFClassityCell.m in Sources */,
+				542A8E821C218E02002BE378 /* TYFDetailsModel.m in Sources */,
 				544F3A8C1C1F0DDA00744927 /* SDWebImagePrefetcher.m in Sources */,
 				544F3A821C1F0DDA00744927 /* MJRefreshHeaderView.m in Sources */,
 				544F3A6D1C1F0DDA00744927 /* AFURLConnectionOperation.m in Sources */,
@@ -3573,6 +3608,7 @@
 				544F3A6C1C1F0DDA00744927 /* AFSecurityPolicy.m in Sources */,
 				544F3A681C1F0DDA00744927 /* AFHTTPRequestOperation.m in Sources */,
 				544F3A701C1F0DDA00744927 /* AFURLSessionManager.m in Sources */,
+				542A8E781C218DD9002BE378 /* TYFDetailsCell.m in Sources */,
 				544F3A6F1C1F0DDA00744927 /* AFURLResponseSerialization.m in Sources */,
 				544F401F1C1FB85C00744927 /* TYFBoutiqueViewController.m in Sources */,
 				544F39C81C1EA45000744927 /* AppDelegate.m in Sources */,
@@ -3601,6 +3637,7 @@
 				544F3A8F1C1F0DDA00744927 /* UIImage+MultiFormat.m in Sources */,
 				542A8E591C20E82D002BE378 /* ZMainTabBarViewController.m in Sources */,
 				544F3A741C1F0DDA00744927 /* UIButton+AFNetworking.m in Sources */,
+				542A8E791C218DD9002BE378 /* TYFDetailsContentView.m in Sources */,
 				544F3A771C1F0DDA00744927 /* UIRefreshControl+AFNetworking.m in Sources */,
 				544F402F1C20101B00744927 /* TYFBoutiqueCell.m in Sources */,
 				542A8E411C20E5CE002BE378 /* TYFCatalogCell.m in Sources */,
@@ -3608,10 +3645,13 @@
 				544F3A7A1C1F0DDA00744927 /* UIImage+Extension.m in Sources */,
 				544F3A871C1F0DDA00744927 /* SDWebImageCompat.m in Sources */,
 				544F3A791C1F0DDA00744927 /* NSString+Extension.m in Sources */,
+				542A8E761C218DD9002BE378 /* TYFCollectionCell.m in Sources */,
 				544F3A881C1F0DDA00744927 /* SDWebImageDecoder.m in Sources */,
 				544F3A861C1F0DDA00744927 /* SDImageCache.m in Sources */,
+				542A8E811C218E02002BE378 /* TYFDetailsFrame.m in Sources */,
 				544F3A841C1F0DDA00744927 /* MKAnnotationView+WebCache.m in Sources */,
 				544F3A7D1C1F0DDA00744927 /* MenuViewController.m in Sources */,
+				542A8E801C218E02002BE378 /* TYFCollectionModel.m in Sources */,
 				544F40191C1FB76A00744927 /* TYFRootViewController.m in Sources */,
 				544F3A781C1F0DDA00744927 /* UIWebView+AFNetworking.m in Sources */,
 				544F402B1C200FE400744927 /* TYFSlideModel.m in Sources */,
