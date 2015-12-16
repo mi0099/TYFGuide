@@ -7,6 +7,7 @@
 //
 
 #import "TYFClassifyViewController.h"
+#import "TYFDetailsViewController.h"
 #import "RequestTool.h"
 #import "TYFClassityCell.h"
 #import "TYFClassityModel.h"
@@ -120,6 +121,17 @@
     return 0.01;
 }
 
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    TYFDetailsViewController *vc=[[TYFDetailsViewController alloc]init];
+    TYFClassityModel *classityModel=_dataArray[indexPath.row];
+    vc.url=[NSString stringWithFormat:@"%@%@%@",@"http://course.jaxus.cn/api/category/",classityModel._id,@"/courses?channel=appstore&end=%d&freeCourse=0&platform=2&start=%d"];
+    vc.titleName=classityModel.name;
+    [[TYFSingleObject shareObject].nav pushViewController:vc animated:YES];
+    //返回的时候被选中cell取消选中状态
+    TYFClassityCell *cell=(TYFClassityCell *)[_tableView cellForRowAtIndexPath:indexPath];
+    cell.selected=NO;
+}
 
 
 - (void)didReceiveMemoryWarning {
