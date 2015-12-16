@@ -27,6 +27,12 @@
 		542A8E561C20E687002BE378 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 542A8E551C20E687002BE378 /* SystemConfiguration.framework */; };
 		542A8E591C20E82D002BE378 /* ZMainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 542A8E581C20E82D002BE378 /* ZMainTabBarViewController.m */; };
 		542A8E5C1C20E8B9002BE378 /* ZSystemPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 542A8E5B1C20E8B9002BE378 /* ZSystemPlayerViewController.m */; };
+		542A8E5F1C210E74002BE378 /* TYFEvaluateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 542A8E5E1C210E74002BE378 /* TYFEvaluateViewController.m */; };
+		542A8E621C210F4D002BE378 /* TYFEvaluateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 542A8E611C210F4D002BE378 /* TYFEvaluateCell.m */; };
+		542A8E651C210F72002BE378 /* TYFEvaluateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 542A8E641C210F72002BE378 /* TYFEvaluateModel.m */; };
+		542A8E681C210F86002BE378 /* TYFEvaluateFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 542A8E671C210F86002BE378 /* TYFEvaluateFrame.m */; };
+		542A8E6B1C21528A002BE378 /* TYFPushDeatailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 542A8E6A1C21528A002BE378 /* TYFPushDeatailsViewController.m */; };
+		542A8E6E1C216351002BE378 /* TYFPushSingleObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 542A8E6D1C216351002BE378 /* TYFPushSingleObject.m */; };
 		544F39C51C1EA45000744927 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 544F39C41C1EA45000744927 /* main.m */; };
 		544F39C81C1EA45000744927 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 544F39C71C1EA45000744927 /* AppDelegate.m */; };
 		544F39CE1C1EA45000744927 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 544F39CC1C1EA45000744927 /* Main.storyboard */; };
@@ -752,6 +758,18 @@
 		542A8E581C20E82D002BE378 /* ZMainTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZMainTabBarViewController.m; sourceTree = "<group>"; };
 		542A8E5A1C20E8B9002BE378 /* ZSystemPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSystemPlayerViewController.h; sourceTree = "<group>"; };
 		542A8E5B1C20E8B9002BE378 /* ZSystemPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSystemPlayerViewController.m; sourceTree = "<group>"; };
+		542A8E5D1C210E74002BE378 /* TYFEvaluateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYFEvaluateViewController.h; sourceTree = "<group>"; };
+		542A8E5E1C210E74002BE378 /* TYFEvaluateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYFEvaluateViewController.m; sourceTree = "<group>"; };
+		542A8E601C210F4D002BE378 /* TYFEvaluateCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYFEvaluateCell.h; sourceTree = "<group>"; };
+		542A8E611C210F4D002BE378 /* TYFEvaluateCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYFEvaluateCell.m; sourceTree = "<group>"; };
+		542A8E631C210F72002BE378 /* TYFEvaluateModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYFEvaluateModel.h; sourceTree = "<group>"; };
+		542A8E641C210F72002BE378 /* TYFEvaluateModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYFEvaluateModel.m; sourceTree = "<group>"; };
+		542A8E661C210F86002BE378 /* TYFEvaluateFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYFEvaluateFrame.h; sourceTree = "<group>"; };
+		542A8E671C210F86002BE378 /* TYFEvaluateFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYFEvaluateFrame.m; sourceTree = "<group>"; };
+		542A8E691C21528A002BE378 /* TYFPushDeatailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYFPushDeatailsViewController.h; sourceTree = "<group>"; };
+		542A8E6A1C21528A002BE378 /* TYFPushDeatailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYFPushDeatailsViewController.m; sourceTree = "<group>"; };
+		542A8E6C1C216351002BE378 /* TYFPushSingleObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYFPushSingleObject.h; sourceTree = "<group>"; };
+		542A8E6D1C216351002BE378 /* TYFPushSingleObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYFPushSingleObject.m; sourceTree = "<group>"; };
 		544F39BF1C1EA45000744927 /* TYFGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TYFGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		544F39C31C1EA45000744927 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		544F39C41C1EA45000744927 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -1597,6 +1615,8 @@
 		542A8E331C20E4DA002BE378 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				542A8E691C21528A002BE378 /* TYFPushDeatailsViewController.h */,
+				542A8E6A1C21528A002BE378 /* TYFPushDeatailsViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1614,6 +1634,10 @@
 		542A8E351C20E4DA002BE378 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				542A8E631C210F72002BE378 /* TYFEvaluateModel.h */,
+				542A8E641C210F72002BE378 /* TYFEvaluateModel.m */,
+				542A8E661C210F86002BE378 /* TYFEvaluateFrame.h */,
+				542A8E671C210F86002BE378 /* TYFEvaluateFrame.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1621,6 +1645,8 @@
 		542A8E361C20E4DA002BE378 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				542A8E601C210F4D002BE378 /* TYFEvaluateCell.h */,
+				542A8E611C210F4D002BE378 /* TYFEvaluateCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1628,6 +1654,8 @@
 		542A8E371C20E4DA002BE378 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				542A8E5D1C210E74002BE378 /* TYFEvaluateViewController.h */,
+				542A8E5E1C210E74002BE378 /* TYFEvaluateViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1765,6 +1793,8 @@
 				544F401E1C1FB85C00744927 /* TYFBoutiqueViewController.m */,
 				542A8E211C2042ED002BE378 /* TYFPushDeatailViewController.h */,
 				542A8E221C2042ED002BE378 /* TYFPushDeatailViewController.m */,
+				542A8E6C1C216351002BE378 /* TYFPushSingleObject.h */,
+				542A8E6D1C216351002BE378 /* TYFPushSingleObject.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -3529,6 +3559,8 @@
 				542A8E3A1C20E595002BE378 /* TYFCatalogViewController.m in Sources */,
 				542A8E261C2049C0002BE378 /* TYFClassityModel.m in Sources */,
 				544F3A8B1C1F0DDA00744927 /* SDWebImageManager.m in Sources */,
+				542A8E6E1C216351002BE378 /* TYFPushSingleObject.m in Sources */,
+				542A8E621C210F4D002BE378 /* TYFEvaluateCell.m in Sources */,
 				542A8E2A1C204A2F002BE378 /* TYFClassityCell.m in Sources */,
 				544F3A8C1C1F0DDA00744927 /* SDWebImagePrefetcher.m in Sources */,
 				544F3A821C1F0DDA00744927 /* MJRefreshHeaderView.m in Sources */,
@@ -3554,14 +3586,18 @@
 				544F3A7C1C1F0DDA00744927 /* MyMD5.m in Sources */,
 				544F3A711C1F0DDA00744927 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				544F3A691C1F0DDA00744927 /* AFHTTPRequestOperationManager.m in Sources */,
+				542A8E5F1C210E74002BE378 /* TYFEvaluateViewController.m in Sources */,
 				544F40221C1FB87D00744927 /* TYFRankingViewController.m in Sources */,
+				542A8E651C210F72002BE378 /* TYFEvaluateModel.m in Sources */,
 				544F40281C200FBC00744927 /* TYFBoutiqueModel.m in Sources */,
 				544F3A921C1F0DDA00744927 /* UIImageView+WebCache.m in Sources */,
+				542A8E681C210F86002BE378 /* TYFEvaluateFrame.m in Sources */,
 				544F3A751C1F0DDA00744927 /* UIImageView+AFNetworking.m in Sources */,
 				542A8E231C2042ED002BE378 /* TYFPushDeatailViewController.m in Sources */,
 				544F3A8D1C1F0DDA00744927 /* UIButton+WebCache.m in Sources */,
 				544F3A891C1F0DDA00744927 /* SDWebImageDownloader.m in Sources */,
 				544F3A901C1F0DDA00744927 /* UIImage+WebP.m in Sources */,
+				542A8E6B1C21528A002BE378 /* TYFPushDeatailsViewController.m in Sources */,
 				544F3A8F1C1F0DDA00744927 /* UIImage+MultiFormat.m in Sources */,
 				542A8E591C20E82D002BE378 /* ZMainTabBarViewController.m in Sources */,
 				544F3A741C1F0DDA00744927 /* UIButton+AFNetworking.m in Sources */,

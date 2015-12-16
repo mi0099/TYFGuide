@@ -26,6 +26,7 @@
 #define MJTextFont [UIFont systemFontOfSize:13]
 #import<SystemConfiguration/SystemConfiguration.h>
 #import<MobileCoreServices/MobileCoreServices.h>
+#import "TYFPushSingleObject.h"
 #import "TYFSingleObject.h"
 #import "Header.h"
 #import "ZPublic.h"
