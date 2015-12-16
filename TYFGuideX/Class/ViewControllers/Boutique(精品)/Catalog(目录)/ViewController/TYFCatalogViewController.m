@@ -36,6 +36,7 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = TYFColor(244, 244, 244);
     [self createView];
+    [self setupRefreshView];
 }
 
 #pragma mark - createTableView
