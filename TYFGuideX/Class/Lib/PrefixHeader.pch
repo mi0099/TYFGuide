@@ -28,4 +28,5 @@
 #import<MobileCoreServices/MobileCoreServices.h>
 #import "TYFSingleObject.h"
 #import "Header.h"
+#import "ZPublic.h"
 #endif

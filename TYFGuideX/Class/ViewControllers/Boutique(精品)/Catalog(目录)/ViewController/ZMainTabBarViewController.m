@@ -1,21 +1,29 @@
 //
-//  TYFPushDeatailViewController.m
+//  ZMainTabBarViewController.m
 //  TYFGuide
 //
-//  Created by 田雨飞 on 15/12/15.
+//  Created by 田雨飞 on 15/12/16.
 //  Copyright (c) 2015年 田雨飞. All rights reserved.
 //
 
-#import "TYFPushDeatailViewController.h"
-#import "MenuViewController.h"
+#import "ZMainTabBarViewController.h"
 
-
-
-@interface TYFPushDeatailViewController ()
+@interface ZMainTabBarViewController ()
 
 @end
 
-@implementation TYFPushDeatailViewController
+@implementation ZMainTabBarViewController
+
++(instancetype)shareMainController;
+{
+    static ZMainTabBarViewController * mainTabBarController=nil;
+    static dispatch_once_t tocken;
+    dispatch_once(&tocken, ^{
+        mainTabBarController=[[ZMainTabBarViewController alloc]init];
+    });
+    
+    return mainTabBarController;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

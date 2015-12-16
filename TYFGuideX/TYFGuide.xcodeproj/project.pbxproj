@@ -11,6 +11,22 @@
 		542A8E261C2049C0002BE378 /* TYFClassityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 542A8E251C2049C0002BE378 /* TYFClassityModel.m */; };
 		542A8E2A1C204A2F002BE378 /* TYFClassityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 542A8E281C204A2F002BE378 /* TYFClassityCell.m */; };
 		542A8E2B1C204A2F002BE378 /* TYFClassityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 542A8E291C204A2F002BE378 /* TYFClassityCell.xib */; };
+		542A8E3A1C20E595002BE378 /* TYFCatalogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 542A8E391C20E595002BE378 /* TYFCatalogViewController.m */; };
+		542A8E3D1C20E5B3002BE378 /* TYFCatalogModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 542A8E3C1C20E5B3002BE378 /* TYFCatalogModel.m */; };
+		542A8E411C20E5CE002BE378 /* TYFCatalogCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 542A8E3F1C20E5CE002BE378 /* TYFCatalogCell.m */; };
+		542A8E421C20E5CE002BE378 /* TYFCatalogCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 542A8E401C20E5CE002BE378 /* TYFCatalogCell.xib */; };
+		542A8E441C20E609002BE378 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 542A8E431C20E609002BE378 /* MediaPlayer.framework */; };
+		542A8E461C20E614002BE378 /* libbz2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 542A8E451C20E614002BE378 /* libbz2.dylib */; };
+		542A8E481C20E627002BE378 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 542A8E471C20E627002BE378 /* libstdc++.dylib */; };
+		542A8E4A1C20E64B002BE378 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 542A8E491C20E64B002BE378 /* libiconv.dylib */; };
+		542A8E4C1C20E653002BE378 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 542A8E4B1C20E653002BE378 /* CoreText.framework */; };
+		542A8E4E1C20E65C002BE378 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 542A8E4D1C20E65B002BE378 /* Security.framework */; };
+		542A8E501C20E665002BE378 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 542A8E4F1C20E665002BE378 /* QuartzCore.framework */; };
+		542A8E521C20E670002BE378 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 542A8E511C20E670002BE378 /* AudioToolbox.framework */; };
+		542A8E541C20E67D002BE378 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 542A8E531C20E67D002BE378 /* MobileCoreServices.framework */; };
+		542A8E561C20E687002BE378 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 542A8E551C20E687002BE378 /* SystemConfiguration.framework */; };
+		542A8E591C20E82D002BE378 /* ZMainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 542A8E581C20E82D002BE378 /* ZMainTabBarViewController.m */; };
+		542A8E5C1C20E8B9002BE378 /* ZSystemPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 542A8E5B1C20E8B9002BE378 /* ZSystemPlayerViewController.m */; };
 		544F39C51C1EA45000744927 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 544F39C41C1EA45000744927 /* main.m */; };
 		544F39C81C1EA45000744927 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 544F39C71C1EA45000744927 /* AppDelegate.m */; };
 		544F39CE1C1EA45000744927 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 544F39CC1C1EA45000744927 /* Main.storyboard */; };
@@ -715,6 +731,27 @@
 		542A8E271C204A2F002BE378 /* TYFClassityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYFClassityCell.h; sourceTree = "<group>"; };
 		542A8E281C204A2F002BE378 /* TYFClassityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYFClassityCell.m; sourceTree = "<group>"; };
 		542A8E291C204A2F002BE378 /* TYFClassityCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TYFClassityCell.xib; sourceTree = "<group>"; };
+		542A8E381C20E595002BE378 /* TYFCatalogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYFCatalogViewController.h; sourceTree = "<group>"; };
+		542A8E391C20E595002BE378 /* TYFCatalogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYFCatalogViewController.m; sourceTree = "<group>"; };
+		542A8E3B1C20E5B3002BE378 /* TYFCatalogModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYFCatalogModel.h; sourceTree = "<group>"; };
+		542A8E3C1C20E5B3002BE378 /* TYFCatalogModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYFCatalogModel.m; sourceTree = "<group>"; };
+		542A8E3E1C20E5CE002BE378 /* TYFCatalogCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYFCatalogCell.h; sourceTree = "<group>"; };
+		542A8E3F1C20E5CE002BE378 /* TYFCatalogCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYFCatalogCell.m; sourceTree = "<group>"; };
+		542A8E401C20E5CE002BE378 /* TYFCatalogCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TYFCatalogCell.xib; sourceTree = "<group>"; };
+		542A8E431C20E609002BE378 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		542A8E451C20E614002BE378 /* libbz2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbz2.dylib; path = usr/lib/libbz2.dylib; sourceTree = SDKROOT; };
+		542A8E471C20E627002BE378 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		542A8E491C20E64B002BE378 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+		542A8E4B1C20E653002BE378 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		542A8E4D1C20E65B002BE378 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		542A8E4F1C20E665002BE378 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		542A8E511C20E670002BE378 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		542A8E531C20E67D002BE378 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		542A8E551C20E687002BE378 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		542A8E571C20E82D002BE378 /* ZMainTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZMainTabBarViewController.h; sourceTree = "<group>"; };
+		542A8E581C20E82D002BE378 /* ZMainTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZMainTabBarViewController.m; sourceTree = "<group>"; };
+		542A8E5A1C20E8B9002BE378 /* ZSystemPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSystemPlayerViewController.h; sourceTree = "<group>"; };
+		542A8E5B1C20E8B9002BE378 /* ZSystemPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSystemPlayerViewController.m; sourceTree = "<group>"; };
 		544F39BF1C1EA45000744927 /* TYFGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TYFGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		544F39C31C1EA45000744927 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		544F39C41C1EA45000744927 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -1468,6 +1505,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				542A8E561C20E687002BE378 /* SystemConfiguration.framework in Frameworks */,
+				542A8E541C20E67D002BE378 /* MobileCoreServices.framework in Frameworks */,
+				542A8E521C20E670002BE378 /* AudioToolbox.framework in Frameworks */,
+				542A8E501C20E665002BE378 /* QuartzCore.framework in Frameworks */,
+				542A8E4E1C20E65C002BE378 /* Security.framework in Frameworks */,
+				542A8E4C1C20E653002BE378 /* CoreText.framework in Frameworks */,
+				542A8E4A1C20E64B002BE378 /* libiconv.dylib in Frameworks */,
+				542A8E481C20E627002BE378 /* libstdc++.dylib in Frameworks */,
+				542A8E461C20E614002BE378 /* libbz2.dylib in Frameworks */,
+				542A8E441C20E609002BE378 /* MediaPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1481,9 +1528,123 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		542A8E2C1C20E4DA002BE378 /* Catalog(目录) */ = {
+			isa = PBXGroup;
+			children = (
+				542A8E2D1C20E4DA002BE378 /* Model */,
+				542A8E2E1C20E4DA002BE378 /* View */,
+				542A8E2F1C20E4DA002BE378 /* ViewController */,
+			);
+			path = "Catalog(目录)";
+			sourceTree = "<group>";
+		};
+		542A8E2D1C20E4DA002BE378 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				542A8E3B1C20E5B3002BE378 /* TYFCatalogModel.h */,
+				542A8E3C1C20E5B3002BE378 /* TYFCatalogModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		542A8E2E1C20E4DA002BE378 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				542A8E3E1C20E5CE002BE378 /* TYFCatalogCell.h */,
+				542A8E3F1C20E5CE002BE378 /* TYFCatalogCell.m */,
+				542A8E401C20E5CE002BE378 /* TYFCatalogCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		542A8E2F1C20E4DA002BE378 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				542A8E381C20E595002BE378 /* TYFCatalogViewController.h */,
+				542A8E391C20E595002BE378 /* TYFCatalogViewController.m */,
+				542A8E571C20E82D002BE378 /* ZMainTabBarViewController.h */,
+				542A8E581C20E82D002BE378 /* ZMainTabBarViewController.m */,
+				542A8E5A1C20E8B9002BE378 /* ZSystemPlayerViewController.h */,
+				542A8E5B1C20E8B9002BE378 /* ZSystemPlayerViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		542A8E301C20E4DA002BE378 /* Details(详情) */ = {
+			isa = PBXGroup;
+			children = (
+				542A8E311C20E4DA002BE378 /* Model */,
+				542A8E321C20E4DA002BE378 /* View */,
+				542A8E331C20E4DA002BE378 /* ViewController */,
+			);
+			path = "Details(详情)";
+			sourceTree = "<group>";
+		};
+		542A8E311C20E4DA002BE378 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		542A8E321C20E4DA002BE378 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		542A8E331C20E4DA002BE378 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		542A8E341C20E4DA002BE378 /* Evaluate(评价) */ = {
+			isa = PBXGroup;
+			children = (
+				542A8E351C20E4DA002BE378 /* Model */,
+				542A8E361C20E4DA002BE378 /* View */,
+				542A8E371C20E4DA002BE378 /* ViewController */,
+			);
+			path = "Evaluate(评价)";
+			sourceTree = "<group>";
+		};
+		542A8E351C20E4DA002BE378 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		542A8E361C20E4DA002BE378 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		542A8E371C20E4DA002BE378 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		544F39B61C1EA45000744927 = {
 			isa = PBXGroup;
 			children = (
+				542A8E551C20E687002BE378 /* SystemConfiguration.framework */,
+				542A8E531C20E67D002BE378 /* MobileCoreServices.framework */,
+				542A8E511C20E670002BE378 /* AudioToolbox.framework */,
+				542A8E4F1C20E665002BE378 /* QuartzCore.framework */,
+				542A8E4D1C20E65B002BE378 /* Security.framework */,
+				542A8E4B1C20E653002BE378 /* CoreText.framework */,
+				542A8E491C20E64B002BE378 /* libiconv.dylib */,
+				542A8E471C20E627002BE378 /* libstdc++.dylib */,
+				542A8E451C20E614002BE378 /* libbz2.dylib */,
+				542A8E431C20E609002BE378 /* MediaPlayer.framework */,
 				544F39E81C1EA7CD00744927 /* Class */,
 				544F39C11C1EA45000744927 /* TYFGuide */,
 				544F39DB1C1EA45000744927 /* TYFGuideTests */,
@@ -1566,6 +1727,9 @@
 		544F39EC1C1EA7CD00744927 /* Boutique(精品) */ = {
 			isa = PBXGroup;
 			children = (
+				542A8E2C1C20E4DA002BE378 /* Catalog(目录) */,
+				542A8E301C20E4DA002BE378 /* Details(详情) */,
+				542A8E341C20E4DA002BE378 /* Evaluate(评价) */,
 				544F39ED1C1EA7CD00744927 /* Model */,
 				544F39EE1C1EA7CD00744927 /* View */,
 				544F39EF1C1EA7CD00744927 /* ViewController */,
@@ -2920,6 +3084,7 @@
 				544F3FE71C1F987C00744927 /* upomp_lthj_default_drop.png in Resources */,
 				544F3FBA1C1F987C00744927 /* u1f634.png in Resources */,
 				544F400C1C1F987C00744927 /* vpi__tab_selected_focused_holo.9.png in Resources */,
+				542A8E421C20E5CE002BE378 /* TYFCatalogCell.xib in Resources */,
 				544F3FF21C1F987C00744927 /* upomp_lthj_keyboard.png in Resources */,
 				544F3E171C1F987C00744927 /* get 上午9.17.34.xls in Resources */,
 				544F3DAD1C1F987C00744927 /* abc_btn_check_to_on_mtrl_015.png in Resources */,
@@ -3361,6 +3526,7 @@
 				544F3A801C1F0DDA00744927 /* MJRefreshConst.m in Sources */,
 				544F3A941C1F0DDA00744927 /* ZPublic.m in Sources */,
 				544F3A6E1C1F0DDA00744927 /* AFURLRequestSerialization.m in Sources */,
+				542A8E3A1C20E595002BE378 /* TYFCatalogViewController.m in Sources */,
 				542A8E261C2049C0002BE378 /* TYFClassityModel.m in Sources */,
 				544F3A8B1C1F0DDA00744927 /* SDWebImageManager.m in Sources */,
 				542A8E2A1C204A2F002BE378 /* TYFClassityCell.m in Sources */,
@@ -3384,6 +3550,7 @@
 				544F3A831C1F0DDA00744927 /* RequestTool.m in Sources */,
 				544F401C1C1FB79800744927 /* TYFClassifyViewController.m in Sources */,
 				544F3A8E1C1F0DDA00744927 /* UIImage+GIF.m in Sources */,
+				542A8E3D1C20E5B3002BE378 /* TYFCatalogModel.m in Sources */,
 				544F3A7C1C1F0DDA00744927 /* MyMD5.m in Sources */,
 				544F3A711C1F0DDA00744927 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				544F3A691C1F0DDA00744927 /* AFHTTPRequestOperationManager.m in Sources */,
@@ -3396,9 +3563,11 @@
 				544F3A891C1F0DDA00744927 /* SDWebImageDownloader.m in Sources */,
 				544F3A901C1F0DDA00744927 /* UIImage+WebP.m in Sources */,
 				544F3A8F1C1F0DDA00744927 /* UIImage+MultiFormat.m in Sources */,
+				542A8E591C20E82D002BE378 /* ZMainTabBarViewController.m in Sources */,
 				544F3A741C1F0DDA00744927 /* UIButton+AFNetworking.m in Sources */,
 				544F3A771C1F0DDA00744927 /* UIRefreshControl+AFNetworking.m in Sources */,
 				544F402F1C20101B00744927 /* TYFBoutiqueCell.m in Sources */,
+				542A8E411C20E5CE002BE378 /* TYFCatalogCell.m in Sources */,
 				544F40251C1FBA0C00744927 /* TYFSingleObject.m in Sources */,
 				544F3A7A1C1F0DDA00744927 /* UIImage+Extension.m in Sources */,
 				544F3A871C1F0DDA00744927 /* SDWebImageCompat.m in Sources */,
@@ -3410,6 +3579,7 @@
 				544F40191C1FB76A00744927 /* TYFRootViewController.m in Sources */,
 				544F3A781C1F0DDA00744927 /* UIWebView+AFNetworking.m in Sources */,
 				544F402B1C200FE400744927 /* TYFSlideModel.m in Sources */,
+				542A8E5C1C20E8B9002BE378 /* ZSystemPlayerViewController.m in Sources */,
 				544F3A6B1C1F0DDA00744927 /* AFNetworkReachabilityManager.m in Sources */,
 				544F39C51C1EA45000744927 /* main.m in Sources */,
 				544F3A851C1F0DDA00744927 /* NSData+ImageContentType.m in Sources */,
