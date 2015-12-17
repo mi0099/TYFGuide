@@ -11,6 +11,7 @@
 #import "TYFClassifyViewController.h"
 #import "TYFRankingViewController.h"
 #import "TYFBoutiqueViewController.h"
+#import "TYFLoginViewController.h"
 
 @interface TYFRootViewController ()
 
@@ -70,7 +71,12 @@
 }
 -(void)backBtn
 {
-    NSLog(@"登录");
+    //通过模态视图推出登录界面
+    TYFLoginViewController *loginVc = [[TYFLoginViewController alloc]init];
+    UINavigationController *nc = [[UINavigationController alloc]initWithRootViewController:loginVc];
+    [self presentViewController:nc animated:YES completion:^{
+        NSLog(@"视图推出完毕");
+    }];
 }
 
 //查找页面

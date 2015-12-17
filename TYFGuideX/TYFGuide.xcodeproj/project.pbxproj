@@ -41,6 +41,7 @@
 		542A8E811C218E02002BE378 /* TYFDetailsFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 542A8E7D1C218E02002BE378 /* TYFDetailsFrame.m */; };
 		542A8E821C218E02002BE378 /* TYFDetailsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 542A8E7F1C218E02002BE378 /* TYFDetailsModel.m */; };
 		542A8E851C21BF66002BE378 /* TYFDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 542A8E841C21BF66002BE378 /* TYFDetailsViewController.m */; };
+		542A8E881C22564D002BE378 /* TYFLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 542A8E871C22564D002BE378 /* TYFLoginViewController.m */; };
 		544F39C51C1EA45000744927 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 544F39C41C1EA45000744927 /* main.m */; };
 		544F39C81C1EA45000744927 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 544F39C71C1EA45000744927 /* AppDelegate.m */; };
 		544F39CE1C1EA45000744927 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 544F39CC1C1EA45000744927 /* Main.storyboard */; };
@@ -793,6 +794,8 @@
 		542A8E7F1C218E02002BE378 /* TYFDetailsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYFDetailsModel.m; sourceTree = "<group>"; };
 		542A8E831C21BF66002BE378 /* TYFDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYFDetailsViewController.h; sourceTree = "<group>"; };
 		542A8E841C21BF66002BE378 /* TYFDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYFDetailsViewController.m; sourceTree = "<group>"; };
+		542A8E861C22564D002BE378 /* TYFLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYFLoginViewController.h; sourceTree = "<group>"; };
+		542A8E871C22564D002BE378 /* TYFLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYFLoginViewController.m; sourceTree = "<group>"; };
 		544F39BF1C1EA45000744927 /* TYFGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TYFGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		544F39C31C1EA45000744927 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		544F39C41C1EA45000744927 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -1962,6 +1965,8 @@
 				544F40241C1FBA0C00744927 /* TYFSingleObject.m */,
 				542A8E831C21BF66002BE378 /* TYFDetailsViewController.h */,
 				542A8E841C21BF66002BE378 /* TYFDetailsViewController.m */,
+				542A8E861C22564D002BE378 /* TYFLoginViewController.h */,
+				542A8E871C22564D002BE378 /* TYFLoginViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -3615,6 +3620,7 @@
 				544F3A701C1F0DDA00744927 /* AFURLSessionManager.m in Sources */,
 				542A8E781C218DD9002BE378 /* TYFDetailsCell.m in Sources */,
 				544F3A6F1C1F0DDA00744927 /* AFURLResponseSerialization.m in Sources */,
+				542A8E881C22564D002BE378 /* TYFLoginViewController.m in Sources */,
 				544F401F1C1FB85C00744927 /* TYFBoutiqueViewController.m in Sources */,
 				544F39C81C1EA45000744927 /* AppDelegate.m in Sources */,
 				544F3A761C1F0DDA00744927 /* UIProgressView+AFNetworking.m in Sources */,
