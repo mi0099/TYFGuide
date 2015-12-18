@@ -42,6 +42,9 @@
 		542A8E821C218E02002BE378 /* TYFDetailsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 542A8E7F1C218E02002BE378 /* TYFDetailsModel.m */; };
 		542A8E851C21BF66002BE378 /* TYFDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 542A8E841C21BF66002BE378 /* TYFDetailsViewController.m */; };
 		542A8E881C22564D002BE378 /* TYFLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 542A8E871C22564D002BE378 /* TYFLoginViewController.m */; };
+		542A8E8C1C23DE9E002BE378 /* TYFRegisteredViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 542A8E8B1C23DE9E002BE378 /* TYFRegisteredViewController.m */; };
+		542A8E8F1C23E490002BE378 /* TYFAgreementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 542A8E8E1C23E490002BE378 /* TYFAgreementViewController.m */; };
+		542A8E921C23E6A4002BE378 /* TYFPassWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 542A8E911C23E6A4002BE378 /* TYFPassWordViewController.m */; };
 		544F39C51C1EA45000744927 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 544F39C41C1EA45000744927 /* main.m */; };
 		544F39C81C1EA45000744927 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 544F39C71C1EA45000744927 /* AppDelegate.m */; };
 		544F39CE1C1EA45000744927 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 544F39CC1C1EA45000744927 /* Main.storyboard */; };
@@ -796,6 +799,12 @@
 		542A8E841C21BF66002BE378 /* TYFDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYFDetailsViewController.m; sourceTree = "<group>"; };
 		542A8E861C22564D002BE378 /* TYFLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYFLoginViewController.h; sourceTree = "<group>"; };
 		542A8E871C22564D002BE378 /* TYFLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYFLoginViewController.m; sourceTree = "<group>"; };
+		542A8E8A1C23DE9E002BE378 /* TYFRegisteredViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYFRegisteredViewController.h; sourceTree = "<group>"; };
+		542A8E8B1C23DE9E002BE378 /* TYFRegisteredViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYFRegisteredViewController.m; sourceTree = "<group>"; };
+		542A8E8D1C23E490002BE378 /* TYFAgreementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYFAgreementViewController.h; sourceTree = "<group>"; };
+		542A8E8E1C23E490002BE378 /* TYFAgreementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYFAgreementViewController.m; sourceTree = "<group>"; };
+		542A8E901C23E6A4002BE378 /* TYFPassWordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYFPassWordViewController.h; sourceTree = "<group>"; };
+		542A8E911C23E6A4002BE378 /* TYFPassWordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYFPassWordViewController.m; sourceTree = "<group>"; };
 		544F39BF1C1EA45000744927 /* TYFGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TYFGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		544F39C31C1EA45000744927 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		544F39C41C1EA45000744927 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -1699,6 +1708,21 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
+		542A8E891C23DCCB002BE378 /* LoginViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				542A8E861C22564D002BE378 /* TYFLoginViewController.h */,
+				542A8E871C22564D002BE378 /* TYFLoginViewController.m */,
+				542A8E8A1C23DE9E002BE378 /* TYFRegisteredViewController.h */,
+				542A8E8B1C23DE9E002BE378 /* TYFRegisteredViewController.m */,
+				542A8E8D1C23E490002BE378 /* TYFAgreementViewController.h */,
+				542A8E8E1C23E490002BE378 /* TYFAgreementViewController.m */,
+				542A8E901C23E6A4002BE378 /* TYFPassWordViewController.h */,
+				542A8E911C23E6A4002BE378 /* TYFPassWordViewController.m */,
+			);
+			name = LoginViewControllers;
+			sourceTree = "<group>";
+		};
 		544F39B61C1EA45000744927 = {
 			isa = PBXGroup;
 			children = (
@@ -1965,8 +1989,7 @@
 				544F40241C1FBA0C00744927 /* TYFSingleObject.m */,
 				542A8E831C21BF66002BE378 /* TYFDetailsViewController.h */,
 				542A8E841C21BF66002BE378 /* TYFDetailsViewController.m */,
-				542A8E861C22564D002BE378 /* TYFLoginViewController.h */,
-				542A8E871C22564D002BE378 /* TYFLoginViewController.m */,
+				542A8E891C23DCCB002BE378 /* LoginViewControllers */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -3602,6 +3625,7 @@
 				544F3A6E1C1F0DDA00744927 /* AFURLRequestSerialization.m in Sources */,
 				542A8E3A1C20E595002BE378 /* TYFCatalogViewController.m in Sources */,
 				542A8E261C2049C0002BE378 /* TYFClassityModel.m in Sources */,
+				542A8E8F1C23E490002BE378 /* TYFAgreementViewController.m in Sources */,
 				544F3A8B1C1F0DDA00744927 /* SDWebImageManager.m in Sources */,
 				542A8E6E1C216351002BE378 /* TYFPushSingleObject.m in Sources */,
 				542A8E621C210F4D002BE378 /* TYFEvaluateCell.m in Sources */,
@@ -3623,6 +3647,7 @@
 				542A8E881C22564D002BE378 /* TYFLoginViewController.m in Sources */,
 				544F401F1C1FB85C00744927 /* TYFBoutiqueViewController.m in Sources */,
 				544F39C81C1EA45000744927 /* AppDelegate.m in Sources */,
+				542A8E921C23E6A4002BE378 /* TYFPassWordViewController.m in Sources */,
 				544F3A761C1F0DDA00744927 /* UIProgressView+AFNetworking.m in Sources */,
 				544F3A6A1C1F0DDA00744927 /* AFHTTPSessionManager.m in Sources */,
 				544F3A811C1F0DDA00744927 /* MJRefreshFooterView.m in Sources */,
@@ -3659,6 +3684,7 @@
 				544F3A791C1F0DDA00744927 /* NSString+Extension.m in Sources */,
 				542A8E761C218DD9002BE378 /* TYFCollectionCell.m in Sources */,
 				544F3A881C1F0DDA00744927 /* SDWebImageDecoder.m in Sources */,
+				542A8E8C1C23DE9E002BE378 /* TYFRegisteredViewController.m in Sources */,
 				544F3A861C1F0DDA00744927 /* SDImageCache.m in Sources */,
 				542A8E811C218E02002BE378 /* TYFDetailsFrame.m in Sources */,
 				544F3A841C1F0DDA00744927 /* MKAnnotationView+WebCache.m in Sources */,

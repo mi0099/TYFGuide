@@ -7,6 +7,8 @@
 //
 
 #import "TYFLoginViewController.h"
+#import "TYFRegisteredViewController.h"
+#import "TYFPassWordViewController.h"
 
 @interface TYFLoginViewController ()<UITextFieldDelegate>
 
@@ -23,6 +25,8 @@
     [self createTextField];
     //创建登录按钮
     [self createButton];
+    //创建注册按钮
+    [self createRegisteredButton];
 }
 
 #pragma mark - 创建控件
@@ -73,8 +77,41 @@
     [button setTitle:@"登录" forState:UIControlStateNormal];
     button.layer.cornerRadius = 5;
     button.layer.masksToBounds = YES;
-    button.titleLabel.font = [UIFont systemFontOfSize:15];                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+    button.titleLabel.font = [UIFont systemFontOfSize:15];
+    button.tag = 3;
     [self.view addSubview:button];
+}
+-(void)createRegisteredButton
+{
+    UIButton *loginButton = (UIButton *)[self.view viewWithTag:3];
+    UIButton *registeredButton = [[UIButton alloc]initWithFrame:CGRectMake(WIDTH - 15 - 55, CGRectGetMaxY(loginButton.frame) + 10, 55, 20)];
+    [registeredButton setTitle:@"快速注册" forState:UIControlStateNormal];
+    [registeredButton setTitleColor:TYFColor(241, 67, 118) forState:UIControlStateNormal];
+    //添加事件
+    [registeredButton addTarget:self action:@selector(registeredOnClick:) forControlEvents:UIControlEventTouchUpInside];
+    registeredButton.titleLabel.font = [UIFont systemFontOfSize:13];
+    [self.view addSubview:registeredButton];
+    //忘记密码
+    UIButton *passwordButton = [[UIButton alloc]initWithFrame:CGRectMake(15, CGRectGetMaxY(loginButton.frame) + 10, 55, 20)];
+    [passwordButton setTitle:@"忘记密码" forState:UIControlStateNormal];
+    [passwordButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [passwordButton addTarget:self action:@selector(passwordOnClick:) forControlEvents:UIControlEventTouchUpInside];
+    passwordButton.titleLabel.font = [UIFont systemFontOfSize:13];
+    [self.view addSubview:passwordButton];
+}
+
+-(void)registeredOnClick:(UIButton *)button
+{
+    //推出注册页面
+    TYFRegisteredViewController *svc = [[TYFRegisteredViewController alloc]init];
+    [self.navigationController pushViewController:svc animated:YES];
+}
+
+-(void)passwordOnClick:(UIButton *)button
+{
+    //推出找回密码页面
+    TYFPassWordViewController *pvc = [[TYFPassWordViewController alloc]init];
+    [self.navigationController pushViewController:pvc animated:YES];
 }
 
 -(void)backViewController
