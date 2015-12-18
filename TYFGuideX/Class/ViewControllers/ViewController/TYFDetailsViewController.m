@@ -36,6 +36,7 @@ static int k=1;
     self.view.backgroundColor = TYFColor(244, 244, 244);
     [self createTableView];
     [self setupRefreshView];
+    [self customItem];
 }
 
 #pragma mark - 刷新控件

@@ -12,6 +12,7 @@
 #import "TYFEvaluateViewController.h"
 #import "TYFPushDeatailsViewController.h"
 #import "UIImageView+WebCache.h"
+#import <ShareSDK/ShareSDK.h>
 
 @interface TYFPushDeatailViewController ()
 
@@ -47,7 +48,7 @@
     self.navigationItem.titleView = label;
     //设置右按钮
     //设置右按钮
-    UIBarButtonItem * searchItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSearch target:self action:@selector(searchController)];
+    UIBarButtonItem * searchItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(actionController)];
     self.navigationItem.rightBarButtonItem=searchItem;
     UIButton *leftButton=[[UIButton alloc]initWithFrame:CGRectMake(0, 0, 28, 24)];
     [leftButton setBackgroundImage:[[UIImage imageNamed:@"md_back_hui.png"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] forState:UIControlStateNormal];
@@ -60,9 +61,52 @@
     [self.navigationController popToRootViewControllerAnimated:YES];
 }
 //查找页面
--(void)searchController
+-(void)actionController
 {
-    NSLog(@"推出查找页面");
+   //社会化组件分享
+    NSString *imagePath=[[NSBundle mainBundle]pathForResource:@"me4s" ofType:@"png"];
+    //构造分享内容
+    id<ISSContent> publishContent = [ShareSDK content:@"IMBA刀塔助手"
+                                       defaultContent:@"测试一下"
+                                                image:[ShareSDK imageWithPath:imagePath]
+                                                title:@"#IMBA刀塔助手#"
+                                                  url:@"http://www.dota2.com.cn/"
+                                          description:@"IMBA刀塔助手是一款你值得拥有的！ ~~"
+                                            mediaType:SSPublishContentMediaTypeNews];
+    NSArray *shareList = [ShareSDK customShareListWithType:
+                          [NSNumber numberWithInteger:ShareTypeWeixiTimeline],
+                          [NSNumber numberWithInteger:ShareTypeWeixiSession],
+                          [NSNumber numberWithInteger:ShareTypeSinaWeibo],
+                          [NSNumber numberWithInteger:ShareTypeQQ],
+                          [NSNumber numberWithInteger:ShareTypeQQSpace],[NSNumber numberWithInteger:ShareTypeDouBan],[NSNumber numberWithInteger:ShareTypeInstagram],[NSNumber numberWithInteger:ShareTypeEvernote],nil];
+    //创建容器
+    id<ISSContainer> container = [ShareSDK container];
+    [container setIPadContainerWithView:self.view arrowDirect:UIPopoverArrowDirectionUp];
+    id<ISSAuthOptions> authOptions = [ShareSDK authOptionsWithAutoAuth:YES
+                                                         allowCallback:YES
+                                                         authViewStyle:SSAuthViewStyleModal
+                                                          viewDelegate:nil
+                                               authManagerViewDelegate:nil];
+    //弹出分享菜单
+    [ShareSDK showShareActionSheet:container
+                         shareList:shareList
+                           content:publishContent
+                     statusBarTips:YES
+                       authOptions:authOptions
+                      shareOptions:nil
+                            result:^(ShareType type, SSResponseState state, id<ISSPlatformShareInfo> statusInfo, id<ICMErrorInfo> error, BOOL end) {
+                                
+                                if (state == SSResponseStateSuccess)
+                                {
+                                    NSLog(NSLocalizedString(@"TEXT_ShARE_SUC", @"分享成功"));
+                                }
+                                else if (state == SSResponseStateFail)
+                                {
+                                    NSLog(NSLocalizedString(@"TEXT_ShARE_FAI", @"分享失败,错误码:%d,错误描述:%@"), [error errorCode], [error errorDescription]);
+                                }
+                            }];
+    
+
 }
 
 //创建视图控制器

@@ -9,6 +9,17 @@
 #import "AppDelegate.h"
 #import "TYFNewfeatureViewController.h"
 #import "TYFRootViewController.h"
+//第三方平台的SDK头文件,根据需要的平台导入
+//以下分别对应微信,新浪微博,腾讯微博,人人,易信
+#import "WXApi.h"
+#import "WeiboSDK.h"
+#import "WeiboApi.h"
+#import <TencentOpenAPI/QQApi.h>
+#import <TencentOpenAPI/QQApiInterface.h>
+#import <TencentOpenAPI/TencentOAuth.h>
+#import <ShareSDK/ShareSDK.h>
+//开启QQ和Facebook网页授权需要
+#import <QZoneConnection/ISSQZoneApp.h>
 
 @interface AppDelegate ()
 
@@ -18,6 +29,11 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [ShareSDK registerApp:@"7e4b6816d820"];
+    [self initializePlat];
+    id<ISSQZoneApp> app =(id<ISSQZoneApp>)[ShareSDK getClientWithType:ShareTypeQQSpace];
+    [app setIsAllowWebAuthorize:YES];
+
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
@@ -47,6 +63,54 @@
     
     return YES;
 }
+
+-(void)initializePlat
+{
+    //添加微信应用 注册网址 http://open.weixin.qq.com
+    [ShareSDK connectWeChatWithAppId:@"wx4868b35061f87885"
+                           wechatCls:[WXApi class]];
+    //添加新浪微博应用 注册网址 http://open.weibo.com
+    [ShareSDK connectSinaWeiboWithAppKey:@"568898243"
+                               appSecret:@"38a4f8204cc784f81f9f0daaf31e02e3"
+                             redirectUri:@"http://www.sharesdk.cn"];
+    //QQ
+    [ShareSDK connectQQWithQZoneAppKey:@"100371282"
+                     qqApiInterfaceCls:[QQApiInterface class]
+                       tencentOAuthCls:[TencentOAuth class]];
+    //QQ空间
+    [ShareSDK connectQZoneWithAppKey:@"100371282"
+                           appSecret:@"aed9b0303e3ed1e27bae87c33761161d"
+                   qqApiInterfaceCls:[QQApiInterface class]
+                     tencentOAuthCls:[TencentOAuth class]];
+    //豆瓣
+    [ShareSDK connectDoubanWithAppKey:@"02e2cbe5ca06de5908a863b15e149b0b"
+                            appSecret:@"9f1e7b4f71304f2f"
+                          redirectUri:@"http://www.sharesdk.cn"];
+    //Instagram
+    [ShareSDK connectInstagramWithClientId:@"ff68e3216b4f4f989121aa1c2962d058"
+                              clientSecret:@"1b2e82f110264869b3505c3fe34e31a1"
+                               redirectUri:@"http://sharesdk.cn"];
+    //印象笔记
+    [ShareSDK connectEvernoteWithType:SSEverNoteTypeSandbox
+                          consumerKey:@"sharesdk-7807"
+                       consumerSecret:@"d05bf86993836004"];
+}
+-(BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
+{
+    return [ShareSDK handleOpenURL:url
+                        wxDelegate:self];
+}
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication
+         annotation:(id)annotation
+{
+    return [ShareSDK handleOpenURL:url
+                 sourceApplication:sourceApplication
+                        annotation:annotation
+                        wxDelegate:self];
+}
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
