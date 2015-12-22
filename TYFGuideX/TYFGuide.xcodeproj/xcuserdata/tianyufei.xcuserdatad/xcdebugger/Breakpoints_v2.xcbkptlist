@@ -20,28 +20,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Class/ViewControllers/ViewController/TYFLoginViewController.m"
-            timestampString = "472115095.709751"
+            timestampString = "472446348.593127"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
-            landmarkName = "-createTextField"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Class/ViewControllers/ViewController/TYFLoginViewController.m"
-            timestampString = "472115095.709751"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
-            landmarkName = "-createTextField"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "-createThirdLoginButton"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

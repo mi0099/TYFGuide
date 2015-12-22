@@ -27,9 +27,45 @@
     [self createButton];
     //创建注册按钮
     [self createRegisteredButton];
+    //创建第三方登录按钮
+    [self createThirdLoginButton];
 }
 
 #pragma mark - 创建控件
+-(void)createThirdLoginButton
+{
+    NSArray *array = @[@"login_qq.png", @"wx_logo.png", @"login_weibo.png"];
+    int i = 0;
+    for (NSString *imageName in array) {
+        UIButton *button = [[UIButton alloc]initWithFrame:CGRectMake((WIDTH * 0.2) * (i + 1) + 10, HEIGHT * 0.7, WIDTH * 0.15 - 10, WIDTH * 0.15 - 10)];
+//        button.backgroundColor = [UIColor redColor];
+        [button setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
+        [self.view addSubview:button];
+        i++;
+        button.tag = 30 + i;
+        [button addTarget:self action:@selector(thirdLoginClick:) forControlEvents:UIControlEventTouchUpInside];
+    }
+}
+
+//第三方登录
+-(void)thirdLoginClick:(UIButton *)button
+{
+    switch (button.tag - 30) {
+        case 1:
+            
+            break;
+        case 2:
+            
+            break;
+        case 3:
+            
+            break;
+            
+        default:
+            break;
+    }
+}
+
 -(void)customItem
 {
     //设置titleView

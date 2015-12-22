@@ -58,9 +58,7 @@
         //存储新版本
         [userdf setObject:currentVersion forKey:key];
         [userdf synchronize];
-    }
-    
-    
+    } 
     return YES;
 }
 
