@@ -763,7 +763,6 @@
 		5464E4091C29382B000826F1 /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 5464E4051C29382B000826F1 /* MBProgressHUD+MJ.m */; };
 		5464E40A1C29382B000826F1 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5464E4061C29382B000826F1 /* MBProgressHUD.bundle */; };
 		5464E40B1C29382B000826F1 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 5464E4081C29382B000826F1 /* MBProgressHUD.m */; };
-		5464E40E1C294CE9000826F1 /* TYFWeiboTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 5464E40D1C294CE9000826F1 /* TYFWeiboTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1633,8 +1632,6 @@
 		5464E4061C29382B000826F1 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
 		5464E4071C29382B000826F1 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		5464E4081C29382B000826F1 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
-		5464E40C1C294CE9000826F1 /* TYFWeiboTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYFWeiboTool.h; sourceTree = "<group>"; };
-		5464E40D1C294CE9000826F1 /* TYFWeiboTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYFWeiboTool.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -3134,8 +3131,6 @@
 			children = (
 				5464E3FD1C292FE0000826F1 /* TYFAccountTool.h */,
 				5464E3FE1C292FE0000826F1 /* TYFAccountTool.m */,
-				5464E40C1C294CE9000826F1 /* TYFWeiboTool.h */,
-				5464E40D1C294CE9000826F1 /* TYFWeiboTool.m */,
 			);
 			name = Tool;
 			path = "OAuth(授权)/Tool";
@@ -3961,7 +3956,6 @@
 				5464E4091C29382B000826F1 /* MBProgressHUD+MJ.m in Sources */,
 				544F40251C1FBA0C00744927 /* TYFSingleObject.m in Sources */,
 				544F3A7A1C1F0DDA00744927 /* UIImage+Extension.m in Sources */,
-				5464E40E1C294CE9000826F1 /* TYFWeiboTool.m in Sources */,
 				544F3A871C1F0DDA00744927 /* SDWebImageCompat.m in Sources */,
 				544F3A791C1F0DDA00744927 /* NSString+Extension.m in Sources */,
 				542A8E761C218DD9002BE378 /* TYFCollectionCell.m in Sources */,

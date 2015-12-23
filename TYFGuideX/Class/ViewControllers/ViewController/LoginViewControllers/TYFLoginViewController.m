@@ -9,6 +9,7 @@
 #import "TYFLoginViewController.h"
 #import "TYFRegisteredViewController.h"
 #import "TYFPassWordViewController.h"
+#import "TYFOAuthViewController.h"
 
 @interface TYFLoginViewController ()<UITextFieldDelegate>
 
@@ -52,13 +53,17 @@
 {
     switch (button.tag - 30) {
         case 1:
-            
+            //QQ
             break;
         case 2:
-            
+            //微信
             break;
         case 3:
-            
+        {
+            //新浪
+            TYFOAuthViewController *oavc = [[TYFOAuthViewController alloc]init];
+            [self.navigationController pushViewController:oavc animated:YES];
+        }
             break;
             
         default:
