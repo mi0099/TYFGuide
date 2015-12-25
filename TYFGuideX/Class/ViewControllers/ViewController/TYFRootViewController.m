@@ -12,6 +12,7 @@
 #import "TYFRankingViewController.h"
 #import "TYFBoutiqueViewController.h"
 #import "TYFLoginViewController.h"
+#import "ScannerViewController.h"
 
 @interface TYFRootViewController ()
 
@@ -82,7 +83,8 @@
 //查找页面
 -(void)searchController
 {
-    NSLog(@"推出查找页面");
+    ScannerViewController *svc = [[ScannerViewController alloc]init];
+    [self presentViewController:svc animated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {

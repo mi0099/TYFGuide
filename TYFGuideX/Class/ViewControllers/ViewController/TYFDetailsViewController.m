@@ -12,6 +12,7 @@
 #import "TYFBoutiqueCell.h"
 #import "TYFPushDeatailViewController.h"
 #import "MJRefresh.h"
+#import "ScannerViewController.h"
 
 @interface TYFDetailsViewController ()<UITableViewDataSource, UITableViewDelegate, MJRefreshBaseViewDelegate>
 
@@ -137,7 +138,8 @@ static int k=1;
 }
 -(void)searchController
 {
-    NSLog(@"搜索");
+    ScannerViewController *svc = [[ScannerViewController alloc]init];
+    [self presentViewController:svc animated:YES completion:nil];
 }
 
 #pragma mark - tableView协议方法实现
