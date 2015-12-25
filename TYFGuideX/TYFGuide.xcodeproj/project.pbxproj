@@ -763,6 +763,13 @@
 		5464E4091C29382B000826F1 /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 5464E4051C29382B000826F1 /* MBProgressHUD+MJ.m */; };
 		5464E40A1C29382B000826F1 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5464E4061C29382B000826F1 /* MBProgressHUD.bundle */; };
 		5464E40B1C29382B000826F1 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 5464E4081C29382B000826F1 /* MBProgressHUD.m */; };
+		54EB8D5A1C2D333C000E0DBC /* libPushSDK-1.8.5.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54EB8D591C2D333C000E0DBC /* libPushSDK-1.8.5.a */; };
+		54EB8D5C1C2D337C000E0DBC /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 54EB8D5B1C2D337C000E0DBC /* libz.tbd */; };
+		54EB8D5E1C2D3387000E0DBC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54EB8D5D1C2D3387000E0DBC /* CoreGraphics.framework */; };
+		54EB8D601C2D33A9000E0DBC /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54EB8D5F1C2D33A9000E0DBC /* CoreFoundation.framework */; };
+		54EB8D621C2D33B1000E0DBC /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54EB8D611C2D33B1000E0DBC /* CFNetwork.framework */; };
+		54EB8D641C2D33B9000E0DBC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54EB8D631C2D33B9000E0DBC /* Foundation.framework */; };
+		54EB8D661C2D3406000E0DBC /* PushConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 54EB8D651C2D3406000E0DBC /* PushConfig.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1632,6 +1639,14 @@
 		5464E4061C29382B000826F1 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
 		5464E4071C29382B000826F1 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		5464E4081C29382B000826F1 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		54EB8D581C2D333C000E0DBC /* APService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APService.h; sourceTree = "<group>"; };
+		54EB8D591C2D333C000E0DBC /* libPushSDK-1.8.5.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libPushSDK-1.8.5.a"; sourceTree = "<group>"; };
+		54EB8D5B1C2D337C000E0DBC /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		54EB8D5D1C2D3387000E0DBC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		54EB8D5F1C2D33A9000E0DBC /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		54EB8D611C2D33B1000E0DBC /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		54EB8D631C2D33B9000E0DBC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		54EB8D651C2D3406000E0DBC /* PushConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PushConfig.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1639,17 +1654,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54EB8D641C2D33B9000E0DBC /* Foundation.framework in Frameworks */,
+				54EB8D621C2D33B1000E0DBC /* CFNetwork.framework in Frameworks */,
+				54EB8D601C2D33A9000E0DBC /* CoreFoundation.framework in Frameworks */,
+				542A8ED01C23ECD7002BE378 /* CoreTelephony.framework in Frameworks */,
+				542A8E561C20E687002BE378 /* SystemConfiguration.framework in Frameworks */,
+				54EB8D5E1C2D3387000E0DBC /* CoreGraphics.framework in Frameworks */,
+				54EB8D5C1C2D337C000E0DBC /* libz.tbd in Frameworks */,
+				542A8E4E1C20E65C002BE378 /* Security.framework in Frameworks */,
 				542A8EDC1C23ED25002BE378 /* libsqlite3.dylib in Frameworks */,
 				542A8E481C20E627002BE378 /* libstdc++.dylib in Frameworks */,
 				542A8EDA1C23ED15002BE378 /* Accounts.framework in Frameworks */,
 				542A8ED81C23ED0C002BE378 /* Social.framework in Frameworks */,
 				542A8ED61C23ED03002BE378 /* ImageIO.framework in Frameworks */,
-				542A8E4E1C20E65C002BE378 /* Security.framework in Frameworks */,
 				542A8ED41C23ECED002BE378 /* libz.1.2.5.dylib in Frameworks */,
 				542A8ED21C23ECE4002BE378 /* libicucore.dylib in Frameworks */,
-				542A8ED01C23ECD7002BE378 /* CoreTelephony.framework in Frameworks */,
 				542A8E501C20E665002BE378 /* QuartzCore.framework in Frameworks */,
-				542A8E561C20E687002BE378 /* SystemConfiguration.framework in Frameworks */,
 				542A8EC41C23EC93002BE378 /* ShareSDKCoreService.framework in Frameworks */,
 				542A8EC71C23EC93002BE378 /* libWeiboSDK.a in Frameworks */,
 				542A8ECA1C23EC93002BE378 /* libWeChatSDK.a in Frameworks */,
@@ -1662,6 +1682,7 @@
 				542A8EC91C23EC93002BE378 /* libTCWeiboSDK.a in Frameworks */,
 				542A8E4C1C20E653002BE378 /* CoreText.framework in Frameworks */,
 				542A8EC01C23EC93002BE378 /* WeChatConnection.framework in Frameworks */,
+				54EB8D5A1C2D333C000E0DBC /* libPushSDK-1.8.5.a in Frameworks */,
 				542A8ECB1C23EC93002BE378 /* ShareSDK.framework in Frameworks */,
 				542A8E4A1C20E64B002BE378 /* libiconv.dylib in Frameworks */,
 				542A8EB91C23EC93002BE378 /* DouBanConnection.framework in Frameworks */,
@@ -1929,6 +1950,8 @@
 		544F39B61C1EA45000744927 = {
 			isa = PBXGroup;
 			children = (
+				54EB8D651C2D3406000E0DBC /* PushConfig.plist */,
+				54EB8D5B1C2D337C000E0DBC /* libz.tbd */,
 				544F39E81C1EA7CD00744927 /* Class */,
 				544F39C11C1EA45000744927 /* TYFGuide */,
 				544F39DB1C1EA45000744927 /* TYFGuideTests */,
@@ -1970,6 +1993,10 @@
 		544F39DB1C1EA45000744927 /* TYFGuideTests */ = {
 			isa = PBXGroup;
 			children = (
+				54EB8D631C2D33B9000E0DBC /* Foundation.framework */,
+				54EB8D611C2D33B1000E0DBC /* CFNetwork.framework */,
+				54EB8D5F1C2D33A9000E0DBC /* CoreFoundation.framework */,
+				54EB8D5D1C2D3387000E0DBC /* CoreGraphics.framework */,
 				542A8EDB1C23ED25002BE378 /* libsqlite3.dylib */,
 				542A8ED91C23ED15002BE378 /* Accounts.framework */,
 				542A8ED71C23ED0C002BE378 /* Social.framework */,
@@ -2208,6 +2235,7 @@
 		544F39FF1C1F0DDA00744927 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				54EB8D571C2D333C000E0DBC /* APNS */,
 				5464E4031C29382B000826F1 /* MBProgressHUD */,
 				542A8E931C23EC93002BE378 /* ShareSDK */,
 				544F3A981C1F226700744927 /* PrefixHeader.pch */,
@@ -3158,6 +3186,15 @@
 			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
+		54EB8D571C2D333C000E0DBC /* APNS */ = {
+			isa = PBXGroup;
+			children = (
+				54EB8D581C2D333C000E0DBC /* APService.h */,
+				54EB8D591C2D333C000E0DBC /* libPushSDK-1.8.5.a */,
+			);
+			path = APNS;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -3745,6 +3782,7 @@
 				5464E27F1C28F4D2000826F1 /* new_feature_pagecontrol_checked_point.png in Resources */,
 				5464E1A11C28F4D2000826F1 /* about_logo.png in Resources */,
 				5464E1901C28F4D2000826F1 /* abc_ic_voice_search_api_mtrl_alpha.png in Resources */,
+				54EB8D661C2D3406000E0DBC /* PushConfig.plist in Resources */,
 				5464E2AD1C28F4D2000826F1 /* player_seekbar_thumb_normal.png in Resources */,
 				5464E2F51C28F4D2000826F1 /* rc_smiley_normal.png in Resources */,
 				5464E3621C28F4D2000826F1 /* u1f601.png in Resources */,
@@ -4133,6 +4171,7 @@
 					"$(PROJECT_DIR)/Class/Lib/ShareSDK/Extend/SinaWeiboSDK",
 					"$(PROJECT_DIR)/Class/Lib/ShareSDK/Extend/TencentWeiboSDK",
 					"$(PROJECT_DIR)/Class/Lib/ShareSDK/Extend/WeChatSDK",
+					"$(PROJECT_DIR)/Class/Lib/APNS",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -4160,6 +4199,7 @@
 					"$(PROJECT_DIR)/Class/Lib/ShareSDK/Extend/SinaWeiboSDK",
 					"$(PROJECT_DIR)/Class/Lib/ShareSDK/Extend/TencentWeiboSDK",
 					"$(PROJECT_DIR)/Class/Lib/ShareSDK/Extend/WeChatSDK",
+					"$(PROJECT_DIR)/Class/Lib/APNS",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

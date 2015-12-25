@@ -20,6 +20,7 @@
 #import <ShareSDK/ShareSDK.h>
 //开启QQ和Facebook网页授权需要
 #import <QZoneConnection/ISSQZoneApp.h>
+#import "APService.h"
 
 @interface AppDelegate ()
 
@@ -131,5 +132,44 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+#pragma mark - 消息推送
+
+-(void)addJpushService:(NSDictionary *)launchOptions
+{
+    
+#if __IPHONE_OS_VERSION_MAX_ALLOWED > __IPHONE_8_0
+    if ([[UIDevice currentDevice].systemVersion floatValue] >= 8.0) {
+        //categories
+        [APService
+         registerForRemoteNotificationTypes:(UIUserNotificationTypeBadge |UIUserNotificationTypeSound |UIUserNotificationTypeAlert)categories:nil];
+    }
+#else
+    
+    [APService
+     registerForRemoteNotificationTypes:(UIRemoteNotificationTypeBadge |UIRemoteNotificationTypeSound |UIRemoteNotificationTypeAlert)  categories:nil];
+#endif
+    
+    [APService handleRemoteNotification:launchOptions];
+    
+}
+
+- (void)application:(UIApplication *)application
+didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    // 将deviceToken发送给极光
+    [APService registerDeviceToken:deviceToken];
+}
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
+    // 处理接收的消息,回调极光
+    [APService handleRemoteNotification:userInfo];
+}
+
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult result))completionHandler
+{
+    //支持iOS 7必须实现
+    [APService handleRemoteNotification:userInfo];
+}
+
+#pragma mark - -----------------
 
 @end
