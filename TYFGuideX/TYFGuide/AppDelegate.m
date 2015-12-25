@@ -59,7 +59,8 @@
         //存储新版本
         [userdf setObject:currentVersion forKey:key];
         [userdf synchronize];
-    } 
+    }
+    [self addJpushService:launchOptions];
     return YES;
 }
 
